@@ -1,0 +1,3 @@
+import Link from "next/link";
+const links=[["PRIVACY","/privacy"],["TERMS","/terms"],["SHIPPING + RETURNS","/shipping-returns"],["ACCESSIBILITY","/accessibility"],["FREQUENTLY ASKED QUESTIONS","/faq"],["CUSTOMER CARE","/contact"]];
+export default function Legal(){return <main className="legal-page"><p className="section-kicker">POLICIES + CUSTOMER CARE</p><h1>KNOW BEFORE<br/>YOU ORDER.</h1><p className="page-lead">Clear information about payment, delivery, returns, privacy, accessibility, and getting help.</p><div className="legal-index">{links.map(([label,href],index)=><Link href={href} key={href}><b>0{index+1}</b><span>{label}</span><i>READ →</i></Link>)}</div></main>}

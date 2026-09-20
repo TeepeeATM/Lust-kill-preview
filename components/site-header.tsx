@@ -1,0 +1,5 @@
+"use client";
+import Link from "next/link";
+import { useState } from "react";
+import { useBag } from "./bag-provider";
+export function SiteHeader(){const [open,setOpen]=useState(false);const {count}=useBag();return <header className="site-header"><Link className="brand" href="/">LUST KILLS</Link><button className="menu-button" type="button" aria-expanded={open} aria-controls="mobile-nav" onClick={()=>setOpen(value=>!value)}>{open?"CLOSE":"MENU"}</button><nav className="desktop-nav" aria-label="Primary"><Link href="/shop">SHOP</Link><Link href="/about">STORY</Link><Link href="/faq">FAQ</Link><Link href="/contact">CONTACT</Link></nav><Link className="bag-link" href="/bag">BAG ({count})</Link><nav id="mobile-nav" className={open?"mobile-nav open":"mobile-nav"} aria-label="Mobile"><Link onClick={()=>setOpen(false)} href="/shop">SHOP THE DROP</Link><Link onClick={()=>setOpen(false)} href="/about">STORY</Link><Link onClick={()=>setOpen(false)} href="/faq">FAQ</Link><Link onClick={()=>setOpen(false)} href="/contact">CONTACT</Link><Link onClick={()=>setOpen(false)} href="/legal">LEGAL</Link></nav></header>}
