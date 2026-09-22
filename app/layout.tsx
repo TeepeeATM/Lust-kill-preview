@@ -4,13 +4,14 @@ import "./home.css";
 import "./checkout.css";
 import "./catalog.css";
 import "./content-pages.css";
+import "./type-tuning.css";
 import { BagProvider } from "@/components/bag-provider";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: { default: "Lust Kills — Memphis After Dark", template: "%s — Lust Kills" },
-  description: "Lust Kills is an independent Memphis streetwear label built around ambition, temptation, and consequence.",
+  description: "Independent graphic streetwear from Memphis. Shop the current Lust Kills collection in sizes S–XL.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -1,0 +1,47 @@
+.long-hero {
+  min-height: 60svh;
+  max-width: 1080px;
+}
+
+.long-hero h1 {
+  margin: 18px 0 30px;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: .82;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+}
+
+.page-lead {
+  max-width: 680px;
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+  line-height: 1.5;
+}
+
+.story-section h2,
+.buying-guide h2,
+.contact-callout h2,
+.faq-groups h2 {
+  font-size: clamp(2.5rem, 5.5vw, 5.25rem);
+  line-height: .9;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+.story-section > div p,
+.contact-grid p,
+.faq-groups details p,
+.buying-guide p {
+  max-width: 65ch;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .long-hero {
+    min-height: 54svh;
+  }
+
+  .long-hero h1 {
+    font-size: clamp(3.6rem, 18vw, 6rem);
+    line-height: .86;
+  }
+}
