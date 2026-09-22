@@ -45,3 +45,21 @@
     line-height: .86;
   }
 }
+
+.variant-gallery{min-width:0}
+.variant-main{aspect-ratio:4/5}
+.variant-thumbnails{display:grid;grid-template-columns:repeat(3,minmax(0,120px));gap:10px;margin-top:12px}
+.variant-thumbnails button{position:relative;aspect-ratio:1;background:#111;border:1px solid var(--line);padding:0;overflow:hidden;cursor:pointer;color:var(--paper)}
+.variant-thumbnails button img{object-fit:cover}
+.variant-thumbnails button span{position:absolute;left:7px;bottom:7px;padding:4px 7px;background:rgba(0,0,0,.84);font:700 .62rem var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.variant-thumbnails button.selected{border:2px solid var(--paper)}
+.purchase-panel legend span{color:var(--paper)}
+.variant-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.variant-options button{min-height:58px;padding:0 12px;display:flex;align-items:center;gap:9px;border:1px solid #4a4843;background:transparent;color:var(--paper);cursor:pointer;font:700 .72rem var(--mono);text-transform:uppercase}
+.variant-options button b{margin-left:auto}
+.variant-options button.selected{border-color:var(--paper);background:#1b1a18}
+.color-swatch{width:18px;height:18px;border:1px solid #888;display:inline-block;flex:0 0 auto}
+.swatch-bone{background:#e7e0ce}
+.swatch-red{background:#d51d1f}
+.swatch-black{background:#080808}
+@media(max-width:760px){.variant-options{grid-template-columns:1fr}.variant-options button{min-height:54px}}
