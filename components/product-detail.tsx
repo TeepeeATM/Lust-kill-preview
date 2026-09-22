@@ -19,6 +19,7 @@ export function ProductDetail({product}:{product:Product}){
   return <main className="product-page">
     <div className="variant-gallery">
       <div className="product-art detail variant-main"><Image className="catalog-image" src={selectedImage.src} alt={selectedImage.alt} fill priority sizes="(max-width: 760px) 100vw, 58vw"/></div>
+      {product.images.length>1&&<div className="variant-thumbnails" aria-label="Choose product color image">{product.colorways.map((value,index)=>{const image=product.images[index];if(!image)return null;return <button type="button" key={value} className={color===value?"selected":""} onClick={()=>selectColor(value)} aria-pressed={color===value} aria-label={`View ${value} color`}><Image src={image.src} alt="" fill sizes="110px"/><span>{value}</span></button>;})}</div>}
     </div>
     <div className="product-info">
       <Link className="back-link" href="/shop">← BACK TO ALL PIECES</Link>
