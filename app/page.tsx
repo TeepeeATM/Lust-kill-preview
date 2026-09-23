@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home(){return <main>
-  <section className="campaign-hero" aria-labelledby="campaign-title">
-    <h1 id="campaign-title" className="sr-only">Lust Kills</h1>
-    <div className="campaign-art"><Image className="campaign-image" src="/midnight-memphis-v2.webp" alt="Lust Kills campaign scene" width={1536} height={1024} priority sizes="100vw"/></div>
-    <div className="campaign-bar"><div><p>LUST KILLS / CURRENT RELEASE</p><span>Available now</span></div><Link className="primary-button inline" href="/shop">SHOP THE COLLECTION →</Link></div>
+  <section className="identity-hero" aria-labelledby="campaign-title">
+    <div className="identity-grid" aria-hidden="true"><span/><span/><span/><span/></div>
+    <div className="identity-index" aria-hidden="true">LK</div>
+    <div className="identity-copy"><p>CURRENT COLLECTION / AVAILABLE NOW</p><h1 id="campaign-title">GRAPHIC<br/>STREETWEAR</h1><Link className="primary-button inline" href="/shop">VIEW COLLECTION →</Link></div>
+    <div className="identity-meta"><span>03 PIECES</span><span>SIZES S–XL</span><span>SECURE CHECKOUT</span></div>
   </section>
   <section className="availability-strip" aria-label="Store information"><span>CURRENT COLLECTION / AVAILABLE NOW</span><Link href="/shop">SHOP COLLECTION →</Link></section>
   <section className="collection-tease"><div><p className="section-kicker">CURRENT COLLECTION</p><h2>GRAPHIC<br/>STREETWEAR</h2></div><div><Link className="primary-button inline" href="/shop">VIEW ALL PIECES →</Link></div></section>
