@@ -1,3 +1,48 @@
 import Link from "next/link";
-export const metadata={title:"Contact"};
-export default function Contact(){return <main className="long-page"><header className="long-hero"><p className="section-kicker">CUSTOMER CARE</p><h1>HOW CAN<br/>WE HELP?</h1><p className="page-lead">For help with an order, return, size, or product, send the details below so we can understand what you need.</p></header><section className="contact-grid"><article><b>01</b><h2>ORDER HELP</h2><p>Send your full name, order number, and a short explanation. If the shipping address is wrong, get in touch as soon as possible.</p></article><article><b>02</b><h2>RETURNS</h2><p>Send the order number, item, reason for the return, and whether you want an eligible exchange or refund. Wait for return instructions before mailing anything.</p><Link href="/shipping-returns">READ THE RETURN POLICY →</Link></article><article><b>03</b><h2>DAMAGED OR WRONG ITEM</h2><p>Contact us within seven calendar days of delivery. Include photos of the item, packaging, and shipping label.</p></article><article><b>04</b><h2>SIZING</h2><p>Current pieces are available in S–XL. Check the selected size and color before adding an item to your bag.</p></article></section><section className="contact-callout"><p className="section-kicker">CONTACT LUST KILLS</p><h2>MESSAGE @LUSTKILLS__</h2><p>Instagram is the current customer-care channel. Never send card numbers, passwords, or other sensitive information in a direct message.</p><a className="primary-button inline" href="https://www.instagram.com/lustkills__/" target="_blank" rel="noreferrer">OPEN INSTAGRAM →</a></section><section className="story-section"><p className="section-number">BEFORE YOU MESSAGE</p><div><h2>CHECK THE FAQ FIRST.</h2><p>Our FAQ covers payments, shipping times, returns, damaged orders, sizing, and colorways.</p><Link className="text-link" href="/faq">READ THE FAQ →</Link></div></section></main>}
+
+export const metadata = { title: "Contact" };
+
+export default function Contact() {
+  return (
+    <main className="long-page contact-page">
+      <header className="contact-header">
+        <p className="section-kicker">CUSTOMER CARE</p>
+        <h1>CONTACT</h1>
+        <p>Questions about an order, size, or return? Send Lust Kills a message on Instagram.</p>
+        <a className="primary-button inline" href="https://www.instagram.com/lustkills__/" target="_blank" rel="noreferrer">
+          MESSAGE @LUSTKILLS__ ↗
+        </a>
+      </header>
+
+      <section className="support-list" aria-labelledby="support-heading">
+        <div className="support-list-head">
+          <p className="section-kicker">BEFORE YOU MESSAGE</p>
+          <h2 id="support-heading">WHAT TO INCLUDE</h2>
+        </div>
+        <article>
+          <span>01</span>
+          <h3>ORDER HELP</h3>
+          <p>Your full name, order number, and a short description of what you need.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>RETURN OR WRONG ITEM</h3>
+          <p>Your order number, the item, and clear photos if it arrived damaged or incorrect.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>SIZE QUESTION</h3>
+          <p>The product name and the size you are considering. Current pieces are available in S–XL.</p>
+        </article>
+      </section>
+
+      <section className="contact-resources">
+        <p>Looking for store information?</p>
+        <div>
+          <Link href="/shipping-returns">SHIPPING + RETURNS ↗</Link>
+          <Link href="/faq">FAQ ↗</Link>
+        </div>
+      </section>
+    </main>
+  );
+}

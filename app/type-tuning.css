@@ -89,3 +89,24 @@
 .story-page .story-shop{border-bottom:0}
 .story-page .story-shop .primary-button{margin-top:24px}
 @media(max-width:760px){.story-header{min-height:58svh;padding-block:86px}.story-header h1{font-size:clamp(3.7rem,18vw,5.8rem)}.story-page .story-section{grid-template-columns:1fr;gap:24px;padding-block:86px}}
+
+.contact-page{padding-top:0}
+.contact-header{min-height:72svh;padding:clamp(90px,12vw,170px) 0;display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1px solid var(--line)}
+.contact-header .section-kicker{color:var(--muted)}
+.contact-header h1{margin:14px 0 22px;font:700 clamp(4.25rem,11vw,10rem)/.88 var(--ui);letter-spacing:-.075em}
+.contact-header>p:not(.section-kicker){max-width:620px;margin:0 0 32px;color:var(--muted);font-size:clamp(1.05rem,1.8vw,1.35rem);line-height:1.55}
+.support-list{padding:clamp(96px,13vw,180px) 0}
+.support-list-head{display:grid;grid-template-columns:minmax(160px,.42fr) 1fr;gap:40px;align-items:end;margin-bottom:42px}
+.support-list-head .section-kicker{color:var(--muted)}
+.support-list h2{margin:0;font:700 clamp(2.5rem,5vw,4.8rem)/.95 var(--ui);letter-spacing:-.045em}
+.support-list article{min-height:128px;display:grid;grid-template-columns:80px minmax(190px,.65fr) 1fr;gap:28px;align-items:center;border-top:1px solid var(--line)}
+.support-list article:last-child{border-bottom:1px solid var(--line)}
+.support-list article span{font:.68rem var(--mono);color:var(--muted)}
+.support-list article h3{margin:0;font:700 clamp(1.2rem,2vw,1.7rem)/1.1 var(--ui);letter-spacing:-.02em}
+.support-list article p{max-width:58ch;margin:0;color:var(--muted);line-height:1.65}
+.contact-resources{margin-bottom:clamp(40px,7vw,90px);padding:38px 0;display:flex;justify-content:space-between;align-items:center;gap:30px;border-block:1px solid var(--line)}
+.contact-resources>p{margin:0;color:var(--muted)}
+.contact-resources>div{display:flex;gap:28px}
+.contact-resources a{font:700 .68rem var(--mono);letter-spacing:.08em;border-bottom:1px solid transparent;padding-bottom:5px}
+.contact-resources a:hover,.contact-resources a:focus-visible{border-color:currentColor}
+@media(max-width:760px){.contact-header{min-height:62svh;padding-block:86px}.contact-header h1{font-size:clamp(3.7rem,18vw,5.8rem)}.support-list-head{grid-template-columns:1fr;gap:16px}.support-list article{grid-template-columns:42px 1fr;padding:28px 0}.support-list article p{grid-column:2}.contact-resources{align-items:flex-start;flex-direction:column}.contact-resources>div{align-items:flex-start;flex-direction:column;gap:16px}}
