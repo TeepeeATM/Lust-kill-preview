@@ -30,14 +30,14 @@
 .campaign-note{min-height:76vh;padding:clamp(110px,15vw,210px) clamp(18px,6vw,96px);display:grid;grid-template-columns:.25fr 1.2fr .55fr;gap:clamp(30px,6vw,100px);align-items:end;border-bottom:1px solid var(--line)}
 .campaign-note-index{align-self:start;margin:0;font:.62rem var(--mono);letter-spacing:.12em;color:var(--muted)}
 .campaign-note .section-kicker{color:var(--muted)}
-.campaign-note h2{margin:18px 0 0;font:400 clamp(4rem,9.5vw,10rem)/.78 Georgia,"Times New Roman",serif;letter-spacing:-.065em}
+.campaign-note h2{margin:18px 0 0;font:900 clamp(3.8rem,8.5vw,8.5rem)/.8 var(--display);letter-spacing:-.045em}
 .campaign-note-copy{max-width:37ch;color:var(--muted)}
 .campaign-note-copy>p{margin:0 0 30px;font-size:clamp(.94rem,1.2vw,1.08rem);line-height:1.7}
 .campaign-note-copy a,.campaign-close a,.campaign-social a{display:inline-flex;gap:14px;align-items:center;color:var(--paper);font:700 .67rem var(--mono);letter-spacing:.12em;border-bottom:1px solid currentColor;padding-bottom:7px}
 .campaign-close{position:relative;min-height:58vh;padding:clamp(70px,10vw,140px) clamp(18px,6vw,96px);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;overflow:hidden;background:var(--red)}
 .campaign-close-mark{position:absolute;right:-.07em;top:50%;transform:translateY(-51%);font:900 clamp(15rem,42vw,40rem)/.68 var(--display);letter-spacing:-.12em;color:rgba(5,5,5,.2);mix-blend-mode:multiply}
 .campaign-close p{position:relative;margin:0 0 24px;font:700 .66rem var(--mono);letter-spacing:.14em;color:#fff}
-.campaign-close a{position:relative;font:400 clamp(2.6rem,7vw,7rem)/1 Georgia,"Times New Roman",serif;letter-spacing:-.045em;border-bottom:0;color:#fff;transition:transform .25s ease}
+.campaign-close a{position:relative;font:900 clamp(2.8rem,7vw,6.7rem)/.9 var(--display);letter-spacing:-.035em;border-bottom:0;color:#fff;transition:transform .25s ease}
 .campaign-close a:hover{transform:translateX(8px)}
 .campaign-social{min-height:150px;padding:42px clamp(18px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:30px;border-bottom:1px solid var(--line)}
 .campaign-social>p{margin:0;color:var(--muted);font:.64rem var(--mono);letter-spacing:.12em}

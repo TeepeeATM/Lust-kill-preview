@@ -30,21 +30,21 @@ export default function Home() {
       </section>
 
       <section className="campaign-note" aria-labelledby="campaign-note-title">
-        <p className="campaign-note-index">LK / 01</p>
+        <p className="campaign-note-index">NEW / 2026</p>
         <div>
-          <p className="section-kicker">INDEPENDENT STREETWEAR</p>
-          <h2 id="campaign-note-title">ARTWORK FOR<br />AFTER DARK.</h2>
+          <p className="section-kicker">AVAILABLE NOW</p>
+          <h2 id="campaign-note-title">SHOP THE<br />LATEST</h2>
         </div>
         <div className="campaign-note-copy">
-          <p>Graphic pieces made in limited runs. Built to be worn, remembered, and difficult to replace.</p>
-          <Link href="/about">THE STORY <span aria-hidden="true">↗</span></Link>
+          <p>Three graphic styles in sizes S–XL. Choose your color and size before checkout.</p>
+          <Link href="/shop">SHOP NEW ARRIVALS <span aria-hidden="true">↗</span></Link>
         </div>
       </section>
 
-      <section className="campaign-close" aria-label="Shop the current collection">
+      <section className="campaign-close" aria-label="Shop Lust Kills">
         <div className="campaign-close-mark" aria-hidden="true">LK</div>
-        <p>THE CURRENT COLLECTION</p>
-        <Link href="/shop">VIEW ALL PIECES <span aria-hidden="true">↗</span></Link>
+        <p>LUST KILLS ONLINE</p>
+        <Link href="/shop">SHOP COLLECTION <span aria-hidden="true">↗</span></Link>
       </section>
 
       <section className="campaign-social">

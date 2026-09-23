@@ -63,3 +63,16 @@
 .swatch-red{background:#d51d1f}
 .swatch-black{background:#080808}
 @media(max-width:760px){.variant-options{grid-template-columns:1fr}.variant-options button{min-height:54px}}
+
+.quantity-field{margin:26px 0 18px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-block:1px solid var(--line);padding:14px 0}
+.quantity-field>span{font:700 .7rem var(--mono);letter-spacing:.08em}
+.quantity-control{display:grid;grid-template-columns:44px 46px 44px;align-items:center;border:1px solid #4a4843;min-height:44px}
+.quantity-control button{height:44px;border:0;background:transparent;color:var(--paper);font:400 1.15rem var(--ui);cursor:pointer}
+.quantity-control button:hover:not(:disabled),.quantity-control button:focus-visible{background:var(--paper);color:var(--black)}
+.quantity-control button:disabled{cursor:not-allowed;color:#555}
+.quantity-control output{display:grid;place-items:center;height:26px;border-inline:1px solid #4a4843;font:700 .72rem var(--mono)}
+.bag-actions{display:flex;align-items:center;gap:22px}
+.bag-row .remove-item{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;padding:8px 0}
+.bag-row .remove-item:hover,.bag-row .remove-item:focus-visible{color:var(--paper);border-color:currentColor}
+@media(max-width:560px){.bag-row{align-items:flex-start;flex-direction:column}.bag-actions{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.quantity-control button,.bag-row .remove-item{transition:none}}
