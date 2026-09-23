@@ -76,3 +76,16 @@
 .bag-row .remove-item:hover,.bag-row .remove-item:focus-visible{color:var(--paper);border-color:currentColor}
 @media(max-width:560px){.bag-row{align-items:flex-start;flex-direction:column}.bag-actions{width:100%;justify-content:space-between}}
 @media(prefers-reduced-motion:reduce){.quantity-control button,.bag-row .remove-item{transition:none}}
+
+.story-page{padding-top:0}
+.story-header{min-height:70svh;padding:clamp(90px,12vw,170px) 0;display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1px solid var(--line)}
+.story-header .section-kicker{color:var(--muted)}
+.story-header h1{margin:14px 0 24px;font:700 clamp(4.25rem,11vw,10rem)/.88 var(--ui);letter-spacing:-.075em}
+.story-header>p:last-child{margin:0;max-width:620px;font:400 clamp(1.05rem,1.8vw,1.35rem)/1.55 var(--ui);color:var(--muted)}
+.story-page .story-section{grid-template-columns:80px minmax(0,760px);justify-content:space-between;gap:clamp(28px,8vw,140px);padding:clamp(88px,12vw,160px) 0}
+.story-page .story-section h2{margin:0 0 28px;font:700 clamp(2.3rem,5.5vw,5rem)/.95 var(--ui);letter-spacing:-.045em}
+.story-page .story-section p{font-family:var(--ui);font-size:clamp(1rem,1.25vw,1.12rem)}
+.story-page .section-number{color:var(--muted)}
+.story-page .story-shop{border-bottom:0}
+.story-page .story-shop .primary-button{margin-top:24px}
+@media(max-width:760px){.story-header{min-height:58svh;padding-block:86px}.story-header h1{font-size:clamp(3.7rem,18vw,5.8rem)}.story-page .story-section{grid-template-columns:1fr;gap:24px;padding-block:86px}}

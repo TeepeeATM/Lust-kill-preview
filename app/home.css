@@ -5,10 +5,15 @@
 .campaign-home{background:#050505}
 .fashion-hero{position:relative;min-height:calc(100svh - 72px);overflow:hidden;isolation:isolate;border-bottom:1px solid rgba(238,234,224,.2);background:#050505}
 .fashion-slides{position:absolute;inset:0;z-index:-4;overflow:hidden}
-.fashion-hero-image{object-fit:cover;object-position:center center;filter:saturate(.82) contrast(1.06) brightness(.78);opacity:0;transform:scale(1.035);animation:campaign-slide 18s infinite cubic-bezier(.4,0,.2,1)}
-.fashion-hero-image.slide-two{animation-delay:6s}
-.fashion-hero-image.slide-three{animation-delay:12s}
-.fashion-hero-shade{position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,rgba(3,3,3,.65) 0%,rgba(3,3,3,.18) 46%,rgba(3,3,3,.08) 72%),linear-gradient(180deg,rgba(3,3,3,.15),transparent 45%,rgba(3,3,3,.66))}
+.campaign-frame{position:absolute;inset:0;opacity:0;transform:scale(1.025);overflow:hidden;display:flex;align-items:center;justify-content:center;background:#050505;animation:campaign-slide 18s infinite cubic-bezier(.4,0,.2,1)}
+.campaign-frame.slide-two{animation-delay:6s;background:var(--red)}
+.campaign-frame.slide-three{animation-delay:12s;background:#0a0a0a}
+.campaign-frame span{font:900 clamp(13rem,38vw,40rem)/.7 var(--display);letter-spacing:-.11em;color:rgba(238,234,224,.055);white-space:nowrap}
+.campaign-frame.slide-two span{font:900 clamp(5rem,15vw,15rem)/.8 var(--display);letter-spacing:-.06em;color:rgba(5,5,5,.2)}
+.campaign-frame.slide-three span{color:transparent;-webkit-text-stroke:1px rgba(238,234,224,.13)}
+.campaign-frame i{position:absolute;right:clamp(28px,6vw,100px);top:clamp(32px,8vw,110px);font:400 .62rem var(--mono);font-style:normal;letter-spacing:.15em;color:rgba(238,234,224,.58)}
+.campaign-frame:after{content:"";position:absolute;inset:28px;border:1px solid rgba(238,234,224,.09)}
+.fashion-hero-shade{position:absolute;inset:0;z-index:-3;background:linear-gradient(180deg,rgba(3,3,3,.02),transparent 45%,rgba(3,3,3,.46))}
 .fashion-hero-grain{position:absolute;inset:-35%;z-index:-2;opacity:.09;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");animation:grain .34s steps(2) infinite}
 .campaign-number,.campaign-location,.campaign-scroll{position:absolute;margin:0;font:700 .61rem/1.45 var(--mono);letter-spacing:.12em;color:rgba(238,234,224,.75)}
 .campaign-number{top:clamp(24px,4vw,54px);left:clamp(18px,4vw,64px)}
@@ -47,8 +52,8 @@
 @media(max-width:760px){
   .site-header .brand{width:118px}.site-header .brand img{width:118px}
   .fashion-hero{min-height:calc(100svh - 64px)}
-  .fashion-hero-image{object-position:63% center}
   .fashion-hero-shade{background:linear-gradient(180deg,rgba(3,3,3,.1) 20%,rgba(3,3,3,.15) 45%,rgba(3,3,3,.88) 100%),linear-gradient(90deg,rgba(3,3,3,.18),transparent)}
+  .campaign-frame span{font-size:70vw}.campaign-frame.slide-two span{font-size:21vw}.campaign-frame:after{inset:14px}
   .campaign-number{top:22px}.campaign-scroll{display:none}.campaign-location{bottom:auto;top:22px}
   .fashion-hero-copy{right:18px;bottom:28px}
   .fashion-hero-copy>p{margin-bottom:12px}
@@ -61,4 +66,4 @@
   .campaign-close a{font-size:clamp(2.3rem,11vw,4rem)}
   .campaign-social{align-items:flex-start;flex-direction:column;justify-content:center}
 }
-@media(prefers-reduced-motion:reduce){.fashion-hero-image,.fashion-hero-grain,.campaign-scroll i:after{animation:none}.fashion-hero-image{opacity:0;transform:none}.fashion-hero-image:first-child{opacity:1}.campaign-enter:before,.campaign-enter b,.campaign-close a{transition:none}}
+@media(prefers-reduced-motion:reduce){.campaign-frame,.fashion-hero-grain,.campaign-scroll i:after{animation:none}.campaign-frame{opacity:0;transform:none}.campaign-frame:first-child{opacity:1}.campaign-enter:before,.campaign-enter b,.campaign-close a{transition:none}}

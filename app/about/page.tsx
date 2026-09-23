@@ -1,3 +1,48 @@
 import Link from "next/link";
-export const metadata={title:"Story"};
-export default function About(){return <main className="long-page"><header className="long-hero"><p className="section-kicker">ABOUT LUST KILLS</p><h1>BUILT AROUND<br/>THE ART.</h1><p className="page-lead">Lust Kills is an independent streetwear brand focused on bold graphics, wearable pieces, and releases that speak for themselves.</p></header><nav className="jump-nav" aria-label="On this page"><a href="#point-of-view">OUR APPROACH</a><a href="#language">THE ARTWORK</a><a href="#drop">CURRENT COLLECTION</a><a href="#standard">WHAT MATTERS</a></nav><section className="story-section" id="point-of-view"><p className="section-number">01 / OUR APPROACH</p><div><h2>START WITH A STRONG IDEA.</h2><p>Lust Kills began with a simple goal: turn original artwork into clothes people genuinely want to wear. The brand is still growing, so the focus stays on doing each release well.</p><p>Every piece starts with the graphic. From there, the color, placement, and garment are chosen to give the artwork room to make an impact.</p></div></section><section className="story-section" id="language"><p className="section-number">02 / THE ARTWORK</p><div><h2>LOUD, BUT NEVER RANDOM.</h2><p>The graphics pull from vintage print, hand-drawn illustration, music, money, attraction, and everyday pressure. The references change, but the work should always feel like it belongs to Lust Kills.</p><p>Large prints, worn-in color, and strong contrast give each piece its character without relying on extra decoration.</p></div></section><section className="story-section" id="drop"><p className="section-number">03 / CURRENT COLLECTION</p><div><h2>MEET THE COLLECTION.</h2><p>The current collection includes the Money Calling Tee, the Desire Pays Long Sleeve in bone, red, and black, and the Fatal Attraction Tee. Every piece is available in sizes S–XL.</p><p>They share the same approach: detailed artwork, clear color stories, and graphics made to be seen.</p><Link className="text-link" href="/shop">SHOP THE COLLECTION →</Link></div></section><section className="story-section" id="standard"><p className="section-number">04 / WHAT MATTERS</p><div><h2>KEEP THE PRODUCT HONEST.</h2><p>Product names, colorways, prices, shipping times, and return details should be easy to understand before anyone places an order.</p><p>As Lust Kills grows, the plan is to keep releasing focused work and let the clothes build the brand.</p><Link className="primary-button inline" href="/shop">VIEW ALL PIECES →</Link></div></section></main>}
+
+export const metadata = { title: "Story" };
+
+export default function About() {
+  return (
+    <main className="long-page story-page">
+      <header className="story-header">
+        <p className="section-kicker">THE STORY</p>
+        <h1>LUST KILLS</h1>
+        <p>Independent graphic streetwear led by the artwork</p>
+      </header>
+
+      <nav className="jump-nav" aria-label="On this page">
+        <a href="#idea">THE IDEA</a>
+        <a href="#work">THE WORK</a>
+        <a href="#shop">THE COLLECTION</a>
+      </nav>
+
+      <section className="story-section" id="idea">
+        <p className="section-number">01</p>
+        <div>
+          <h2>THE IDEA</h2>
+          <p>Lust Kills started with original artwork and a simple goal: make graphic clothes people would actually wear.</p>
+          <p>Each release begins with the image. The garment, color, and placement are chosen around it.</p>
+        </div>
+      </section>
+
+      <section className="story-section" id="work">
+        <p className="section-number">02</p>
+        <div>
+          <h2>THE WORK</h2>
+          <p>The graphics pull from vintage print, music, money, attraction, and everyday pressure.</p>
+          <p>Large placements, worn-in color, and strong contrast keep every piece direct.</p>
+        </div>
+      </section>
+
+      <section className="story-section story-shop" id="shop">
+        <p className="section-number">03</p>
+        <div>
+          <h2>AVAILABLE NOW</h2>
+          <p>Shop the Money Calling Tee, Desire Pays Long Sleeve, and Fatal Attraction Tee in sizes S–XL.</p>
+          <Link className="primary-button inline" href="/shop">SHOP COLLECTION →</Link>
+        </div>
+      </section>
+    </main>
+  );
+}

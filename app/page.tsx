@@ -6,9 +6,9 @@ export default function Home() {
     <main className="campaign-home">
       <section className="fashion-hero" aria-labelledby="campaign-title">
         <div className="fashion-slides" aria-hidden="true">
-          <Image className="fashion-hero-image slide-one" src="/campaign/lust-kills-after-hours.png" alt="" fill priority sizes="100vw" />
-          <Image className="fashion-hero-image slide-two" src="/campaign/lust-kills-after-hours-walk.png" alt="" fill sizes="100vw" />
-          <Image className="fashion-hero-image slide-three" src="/campaign/lust-kills-after-hours-detail.png" alt="" fill sizes="100vw" />
+          <div className="campaign-frame slide-one"><span>LK</span><i>01 / LUST KILLS</i></div>
+          <div className="campaign-frame slide-two"><span>LUST KILLS</span><i>MEMPHIS / 2026</i></div>
+          <div className="campaign-frame slide-three"><span>LK</span><i>GRAPHIC STREETWEAR</i></div>
         </div>
         <div className="fashion-hero-shade" aria-hidden="true" />
         <div className="fashion-hero-grain" aria-hidden="true" />
