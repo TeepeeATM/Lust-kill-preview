@@ -43,7 +43,14 @@ export default function Home() {
 
       <section className="campaign-close" aria-label="Shop Lust Kills">
         <div className="campaign-close-mark" aria-hidden="true">LK</div>
-        <p>LUST KILLS ONLINE</p>
+        <div className="campaign-status" aria-label="Lust Kills online">
+          <div aria-hidden="true">
+            <span>LUST KILLS ONLINE</span><i>✦</i>
+            <span>LUST KILLS ONLINE</span><i>✦</i>
+            <span>LUST KILLS ONLINE</span><i>✦</i>
+            <span>LUST KILLS ONLINE</span><i>✦</i>
+          </div>
+        </div>
         <Link href="/shop">SHOP COLLECTION <span aria-hidden="true">↗</span></Link>
       </section>
 

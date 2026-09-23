@@ -41,13 +41,17 @@
 .campaign-note-copy a,.campaign-close a,.campaign-social a{display:inline-flex;gap:14px;align-items:center;color:var(--paper);font:700 .67rem var(--mono);letter-spacing:.12em;border-bottom:1px solid currentColor;padding-bottom:7px}
 .campaign-close{position:relative;min-height:58vh;padding:clamp(70px,10vw,140px) clamp(18px,6vw,96px);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;overflow:hidden;background:var(--red)}
 .campaign-close-mark{position:absolute;right:-.07em;top:50%;transform:translateY(-51%);font:900 clamp(15rem,42vw,40rem)/.68 var(--display);letter-spacing:-.12em;color:rgba(5,5,5,.2);mix-blend-mode:multiply}
-.campaign-close p{position:relative;margin:0 0 24px;font:700 .66rem var(--mono);letter-spacing:.14em;color:#fff}
+.campaign-status{position:absolute;inset:28px 0 auto;overflow:hidden;border-block:1px solid rgba(255,255,255,.24);padding:12px 0;color:#fff}
+.campaign-status>div{display:flex;width:max-content;align-items:center;gap:28px;animation:online-ticker 18s linear infinite}
+.campaign-status span{font:700 .66rem var(--mono);letter-spacing:.16em;white-space:nowrap}
+.campaign-status i{font-style:normal;color:rgba(255,255,255,.54)}
 .campaign-close a{position:relative;font:900 clamp(2.8rem,7vw,6.7rem)/.9 var(--display);letter-spacing:-.035em;border-bottom:0;color:#fff;transition:transform .25s ease}
 .campaign-close a:hover{transform:translateX(8px)}
 .campaign-social{min-height:150px;padding:42px clamp(18px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:30px;border-bottom:1px solid var(--line)}
 .campaign-social>p{margin:0;color:var(--muted);font:.64rem var(--mono);letter-spacing:.12em}
 @keyframes campaign-slide{0%{opacity:0;transform:scale(1.045)}5%{opacity:1}28%{opacity:1}36%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
 @keyframes scroll-cue{0%{transform:translateY(-28px);opacity:0}30%{opacity:1}100%{transform:translateY(58px);opacity:0}}
+@keyframes online-ticker{to{transform:translateX(calc(-25% - 7px))}}
 @keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(3%,-2%)}50%{transform:translate(-2%,3%)}75%{transform:translate(2%,2%)}100%{transform:translate(-3%,-1%)}}
 @media(max-width:760px){
   .site-header .brand{width:118px}.site-header .brand img{width:118px}
@@ -66,4 +70,4 @@
   .campaign-close a{font-size:clamp(2.3rem,11vw,4rem)}
   .campaign-social{align-items:flex-start;flex-direction:column;justify-content:center}
 }
-@media(prefers-reduced-motion:reduce){.campaign-frame,.fashion-hero-grain,.campaign-scroll i:after{animation:none}.campaign-frame{opacity:0;transform:none}.campaign-frame:first-child{opacity:1}.campaign-enter:before,.campaign-enter b,.campaign-close a{transition:none}}
+@media(prefers-reduced-motion:reduce){.campaign-frame,.fashion-hero-grain,.campaign-scroll i:after,.campaign-status>div{animation:none}.campaign-frame{opacity:0;transform:none}.campaign-frame:first-child{opacity:1}.campaign-enter:before,.campaign-enter b,.campaign-close a{transition:none}}
