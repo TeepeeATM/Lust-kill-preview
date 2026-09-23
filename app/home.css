@@ -31,3 +31,5 @@
 .primary-button:hover:not(:disabled){background:#fff;transform:translateY(-2px)}
 @media(max-width:760px){.campaign-hero{min-height:calc(100svh - 64px)}.campaign-image{object-position:62% center}.campaign-art:after{background:linear-gradient(180deg,rgba(5,5,5,.08) 32%,rgba(5,5,5,.94) 100%)}.campaign-bar{align-items:flex-start;flex-direction:column;padding-bottom:24px}.campaign-bar .primary-button{width:100%;min-height:54px}.availability-strip{grid-template-columns:1fr 1fr;padding-block:18px}.collection-tease{grid-template-columns:1fr;gap:32px;padding-inline:18px}.collection-tease h2{font-size:clamp(3.6rem,16vw,6.5rem)}.story-tease{grid-template-columns:1fr}.service-row{grid-template-columns:1fr}.service-row article{min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.service-row article:last-child{border-bottom:0}.service-row h3{margin-top:28px}}
 @media(max-width:420px){.availability-strip{grid-template-columns:1fr}.campaign-image{object-position:64% center}}
+
+@media(prefers-reduced-motion:reduce){.collection-tease,.story-tease,.signal{animation:none}}
