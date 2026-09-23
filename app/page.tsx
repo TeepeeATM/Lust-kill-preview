@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Home(){return <main>
   <section className="campaign-hero" aria-labelledby="campaign-title">
     <h1 id="campaign-title" className="sr-only">Lust Kills</h1>
-    <div className="campaign-art"><Image className="campaign-image" src="/midnight-memphis-v2.webp" alt="Two models in dark streetwear beside a black car on a wet street at night" width={1536} height={1024} priority sizes="100vw"/></div>
-    <div className="campaign-bar"><div><p>LUST KILLS / AFTER HOURS</p><span>Artwork made to be worn.</span></div><Link className="primary-button inline" href="/shop">SHOP THE COLLECTION →</Link></div>
+    <div className="campaign-art"><Image className="campaign-logo" src="/brand/lust-kills-primary.webp" alt="Lust Kills" width={1200} height={800} priority/></div>
+    <div className="campaign-bar"><div><p>LUST KILLS / CURRENT RELEASE</p><span>Available now.</span></div><Link className="primary-button inline" href="/shop">SHOP THE COLLECTION →</Link></div>
   </section>
   <section className="availability-strip" aria-label="Store information"><span>AVAILABLE NOW</span><span>SIZES S–XL</span><span>CURRENT COLLECTION</span><Link href="/shipping-returns">SHIPPING + RETURNS →</Link></section>
   <section className="collection-tease"><div><p className="section-kicker">THE COLLECTION</p><h2>THE CLOTHES<br/>LIVE ELSEWHERE.</h2></div><div><p>Graphic pieces, colorways, and current availability are kept together in the collection so the homepage can stay focused on the world of Lust Kills.</p><Link className="primary-button inline" href="/shop">ENTER THE COLLECTION →</Link></div></section>
