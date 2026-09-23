@@ -5,28 +5,28 @@ export default function Home() {
   return (
     <main className="campaign-home">
       <section className="fashion-hero" aria-labelledby="campaign-title">
-        <Image
-          className="fashion-hero-image"
-          src="/campaign/lust-kills-after-hours.png"
-          alt="Lust Kills after-hours campaign photographed outside a dark storefront"
-          fill
-          priority
-          sizes="100vw"
-        />
+        <div className="fashion-slides" aria-hidden="true">
+          <Image className="fashion-hero-image slide-one" src="/campaign/lust-kills-after-hours.png" alt="" fill priority sizes="100vw" />
+          <Image className="fashion-hero-image slide-two" src="/campaign/lust-kills-after-hours-walk.png" alt="" fill sizes="100vw" />
+          <Image className="fashion-hero-image slide-three" src="/campaign/lust-kills-after-hours-detail.png" alt="" fill sizes="100vw" />
+        </div>
         <div className="fashion-hero-shade" aria-hidden="true" />
         <div className="fashion-hero-grain" aria-hidden="true" />
 
         <div className="campaign-number" aria-hidden="true">01 / 03</div>
         <div className="fashion-hero-copy">
           <p>GRAPHIC STUDIES / 2026</p>
-          <h1 id="campaign-title"><span>LUST</span><span>KILLS</span></h1>
+          <h1 id="campaign-title" className="campaign-wordmark">
+            <span className="sr-only">Lust Kills</span>
+            <Image src="/brand/lust-kills-editorial.png" alt="" width={2172} height={724} priority />
+          </h1>
           <Link className="campaign-enter" href="/shop">
             <span>ENTER COLLECTION</span><b aria-hidden="true">↗</b>
           </Link>
         </div>
 
         <p className="campaign-location">AFTER HOURS<br />MEMPHIS, TN</p>
-        <p className="campaign-scroll" aria-hidden="true">SCROLL TO ENTER</p>
+        <p className="campaign-scroll" aria-hidden="true"><span>SCROLL</span><i /></p>
       </section>
 
       <section className="campaign-note" aria-labelledby="campaign-note-title">
